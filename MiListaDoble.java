@@ -5,6 +5,25 @@
     private int tamano;
 
     @Override
+    public boolean isEmpty() {
+        return tamano == 0;
+
+    }
+
+    @Override
+    public int getSize() {
+        return tamano;
+    }
+
+    @Override
+    public void clear() {
+        cabeza = null;
+        cola = null;
+        tamano = 0;
+
+    }
+
+    @Override
     public Object getHead() {
         if (cabeza == null) {
             return null;
